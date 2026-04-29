@@ -1,12 +1,19 @@
 {
+  {
   "name": "signal-forge-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Telegram Trading Signal Bot",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "ws": "^8.17.1",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
